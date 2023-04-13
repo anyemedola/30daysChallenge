@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&display=swap');
+
+:root {
+    --primary: #2F4182;
+    --secondary: #CBDCFB;
+    --tertiary: #754F78;
+}
+
 body {
     background: #f8f9fa;
 }
@@ -6,11 +14,11 @@ body {
     position: relative;
     margin: auto;
     margin-top: 220px;
-    background: #f2d1cb;
+    background: var(--secondary);
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    box-shadow: inset 2px -2px 8px #997771, inset -2px 2px 8px #997771;
+    box-shadow: inset 2px -2px 8px var(--tertiary), inset -2px 2px 8px #bc80c0;
 }
 
 .main-dial::before {
@@ -56,7 +64,7 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: linear-gradient(5deg, #ff5c8a, #ffc2d4);
+    background: linear-gradient(5deg, var(--primary), var(--secondary));
     -webkit-mask: linear-gradient(#fff, transparent);
     mask: linear-gradient(#fff, transparent);
     border-radius: 50%;
@@ -74,7 +82,7 @@ body {
     left: 60%;
     border-radius: 50px;
     transform: rotate(45deg);
-    box-shadow: 2px 2px 1px #ff5c8a;
+    box-shadow: 2px 2px 1px var(--tertiary);
     z-index: 2;
 }
 
@@ -87,7 +95,7 @@ body {
     bottom: -38%;
     right: 500%;
     border-radius: 50px;
-    box-shadow: -2px 2px 1px #ff5c8a;
+    box-shadow: -2px 2px 1px var(--tertiary);
     transform: rotate(-100deg);
     z-index: 2;
 }
@@ -101,7 +109,7 @@ body {
     top: 65%;
     left: 330%;
     border-radius: 50px;
-    box-shadow: -0.5px 0.5px 1px #ff5c8a;
+    box-shadow: -0.5px 0.5px 1px var(--tertiary);
     transform: rotate(150deg);
     z-index: 2;
 }
@@ -114,7 +122,7 @@ body {
     left: 48.5%;
     background: white;
     border-radius: 50%;
-    box-shadow: 0.5px 0.5px 0.5px #ff5c8a, -0.5px 0.5px 0.5px #ff5c8a;
+    box-shadow: 0.5px 0.5px 0.5px var(--tertiary), -0.5px 0.5px 0.5px var(--tertiary);
     z-index: 3;
 }
 
@@ -124,7 +132,7 @@ body {
     height: 5px;
     width: 5px;
     border-radius: 50%;
-    background: #ff477e;
+    background: var(--tertiary);
     top: 30%;
     left: 30%;
 }
@@ -135,7 +143,7 @@ body {
     height: 110px;
     top: 99%;
     left: 28%;
-    background: linear-gradient(to right, #ccb0ab, #e6c7c2);
+    background: linear-gradient(to right, var(--tertiary), var(--secondary));
     border-radius: 10%;
     z-index: -1;
     box-shadow: inset 0 2px 7px #000;
@@ -147,7 +155,7 @@ body {
     height: 110px;
     top: -42%;
     left: 28%;
-    background: linear-gradient(to right, #ccb0ab, #e6c7c2);
+    background: linear-gradient(to right, var(--tertiary), var(--secondary));
     border-radius: 10%;
     z-index: -1;
     box-shadow: inset 0 -1px 4px #000;
@@ -159,7 +167,7 @@ body {
     height: 45px;
     top: -6%;
     left: 18%;
-    background: linear-gradient(to right, #eabfb9, #e6c7c2);
+    background: linear-gradient(to right, var(--tertiary), var(--secondary));
     box-shadow: inset 0 -1px 4px #000;
     border-radius: 10%;
     z-index: -2;
@@ -171,7 +179,7 @@ body {
     height: 45px;
     top: -6%;
     right: 18%;
-    background: linear-gradient(to right, #eabfb9, #e6c7c2);
+    background: linear-gradient(to right, var(--tertiary), var(--secondary));
     box-shadow: inset 0 -1px 4px #000;
     border-radius: 10%;
     z-index: -2;
@@ -183,7 +191,7 @@ body {
     height: 45px;
     bottom: -6%;
     left: 18%;
-    background: linear-gradient(to bottom, #eabfb9, #e6c7c2);
+    background: linear-gradient(to right, var(--tertiary), var(--secondary));
     box-shadow: inset 0 -1px 4px #000;
     border-radius: 10%;
     z-index: -2;
@@ -195,7 +203,7 @@ body {
     height: 45px;
     bottom: -6%;
     right: 18%;
-    background: linear-gradient(to bottom, #eabfb9, #e6c7c2);
+    background: linear-gradient(to right, var(--tertiary), var(--secondary));
     box-shadow: inset 0 -1px 4px #000;
     border-radius: 10%;
     z-index: -2;
@@ -285,7 +293,7 @@ body {
     position: absolute;
     width: 100px;
     height: 400px;
-    background: #774936;
+    background: var(--tertiary);
     left: 30%;
     top: -30%;
     z-index: -2;
