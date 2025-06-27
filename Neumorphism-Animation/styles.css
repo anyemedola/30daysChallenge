@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #DF8CF0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    border-radius: 500px;
+    width: 60px;
+    height: 60px;
+    background: #DF8CF0;
+    box-shadow: 0 0 0 #92669a, 0 0 0 #dea7e9, 10px 10px 10px #92669a inset, -10px -10px -10px #dea7e9 inset;
+    animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
+}
+
+@keyframes anime {
+    0% {
+        width: 60px;
+        height: 60px;
+        background: #DF8CF0;
+        box-shadow: 0 0 0 #92669a, 0 0 0 #dea7e9, 10px 10px 10px #92669a inset, -10px -10px -10px #dea7e9 inset;
+    }
+
+    25% {
+        width: 60px;
+        height: 60px;
+        background: #dc81ee;
+        box-shadow: 10px 10px 10px #92669a, 10px 10px 10px #dea7e9, 0 0 0 #92669a inset, 0 0 0 #dea7e9 inset;
+    }
+    
+    50% {
+        width: 60px;
+        height: 240px;
+        background: #dc81ee;
+        box-shadow: 10px 10px 10px #92669a, 10px 10px 10px #dea7e9, 0 0 0 #92669a inset, 0 0 0 #dea7e9 inset;
+    }
+
+    100% {
+        width: 480px;
+        height: 240px;
+        background: #dc81ef;
+        box-shadow: 40px 40px 40px #92669a, 0 0 0 #dea7e9, 0 0 0 #92669a inset, 2px 2px 2px #dea7e9 inset;
+    }
+}
